@@ -1,0 +1,86 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "margin-left": 15,
+  "margin-right": 15,
+  "margin-top": 10,
+  "modules-left": ["custom/logo", "sway/mode"],
+  "modules-center": ["sway/workspaces"],
+  "modules-right": [
+    "backlight",
+    "pulseaudio",
+    "network",
+    "cpu",
+    "memory",
+    "battery",
+    "clock"
+  ],
+  "sway/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "sort-by-number": true,
+    "format": "{icon}",
+    "format-icons": {
+      "urgent": "",
+      "focused": "",
+      "default": ""
+    }
+  },
+  "custom/logo": {
+    "format": ""
+  },
+
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "tray": {
+    "spacing": 10
+  },
+
+  "backlight": {
+    "device": "amdgpu_bl1",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", ""]
+  },
+
+  "clock": {
+    "format": "{:%H:%M} ",
+    "format-alt": "{:%Y-%m-%d} "
+  },
+  "cpu": {
+    "format": "{usage}% "
+  },
+  "memory": {
+    "format": "{}% "
+  },
+  "battery": {
+    "bat": "BAT0",
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "network": {
+    "format-wifi": "{signalStrength}% ",
+    "format-ethernet": "",
+    "format-disconnected": ""
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "on-click": "pavucontrol"
+  }
+}
