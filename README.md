@@ -12,7 +12,7 @@ The customization was made with the **SwayWM** as the main environment, keep tha
 - WM: Sway;
 - Bar: Waybar;
 - Terminal: Kitty;
-- Neovim;
+- Neovim | _Nothing special about this one, it's just a tweaked [NvChad](https://nvchad.com/)_;
 - Zathura;
 - ~~Neofetch~~ (removed | repo archived);
 
